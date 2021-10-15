@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>ToDoApp</title>
   </head>
   <body>
@@ -19,70 +19,14 @@
         <h1>Type your task!</h1>
       </header>
       <section class="input_section">
-        <input id="inpt_task" type="text" placeholder="What's your task?" />
+        <input id="inpt_title" type="text" placeholder="What's your task?" />
         <textarea id="description" placeholder="Short description"
           rows="3" cols="30"></textarea>
       </section>
-      <button>Add task</button>
+      <button id="add-button">Add task</button>
       <section id="tasks" class="tasks">
-        <div class="task_card">
-          <h1>
-            Task name...
-          </h1>
-          <p>
-            description
-          </p>
-        </div>
-        <div class="task_card">
-          <h1>
-            Task name...
-          </h1>
-          <p>
-            description
-          </p>
-        </div>
-        <div class="task_card">
-          <h1>
-            Task name...
-          </h1>
-          <p>
-            description
-          </p>
-        </div>
-        <div class="task_card">
-          <h1>
-            Task name...
-          </h1>
-          <p>
-            description
-          </p>
-        </div>
-        <div class="task_card">
-          <h1>
-            Task name...
-          </h1>
-          <p>
-            description
-          </p>
-        </div>
-        <div class="task_card">
-          <h1>
-            Task name...
-          </h1>
-          <p>
-            description
-          </p>
-        </div>
-        <div class="task_card">
-          <h1>
-            Task name...
-          </h1>
-          <p>
-            description
-          </p>
-        </div>
       </section>
     </main>
-    <script src="app.js"></script>
+    <script src="./script/app.js"></script>
   </body>
 </html>
