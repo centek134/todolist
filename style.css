@@ -17,54 +17,70 @@ main header h1 {
   color: #424c55;
   margin-bottom: 30px;
 }
-main .input_section{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    width: 50%;
+main .input_section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 50%;
 }
-main .input_section input, main .input_section textarea{
-    font-size: 20px;
-    margin: 5px 0px;
-    padding: 10px;
-    width: 70%;
-    margin: 5px auto;
+main .input_section input,
+main .input_section textarea {
+  font-size: 20px;
+  margin: 5px 0px;
+  padding: 10px;
+  width: 70%;
+  margin: 5px auto;
 }
 main .input_section textarea {
-    resize: none;
-    
+  resize: none;
 }
-main button{
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: #424C55;
-    color: #f5edf0;   
-    cursor: pointer;
+main button#add-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #424c55;
+  color: #f5edf0;
+  cursor: pointer;
 }
 main section.tasks {
   width: 100%;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(100,1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(100, 1fr);
 }
-main section.tasks div.task_card{
+main section.tasks div.task_card {
   min-height: 300px;
   background-color: #faf5f5;
   margin: 20px;
   color: #2b2929;
   border-radius: 15px 15px 0 0;
   -webkit-box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
--moz-box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
-box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
 }
-main section.tasks div.task_card h2{
+main section.tasks div.task_card h2 {
   padding: 15px 0 15px 15px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   background-color: #bebebe;
   color: #ffffff;
 }
-main section.tasks div.task_card p{
+main section.tasks div.task_card p {
   padding: 10px 20px;
+  height: 200px;
+}
+main section.tasks div.task_card button.task_card_button {
+  cursor: pointer;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(23, 201, 141);
+  color: #ffffff;
+  padding: 15px 10px;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+main section.tasks div.task_card button.task_card_button:hover{
+  background-color: rgb(10, 173, 119);
 }
