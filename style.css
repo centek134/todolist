@@ -40,6 +40,13 @@ main button#add-button {
   background-color: #424c55;
   color: #f5edf0;
   cursor: pointer;
+  border: 2px solid #f5edf0 ;
+  transition: 0.4s;
+}
+main button#add-button:hover{
+  background-color: #f5edf0;
+  color: #424c55;
+  border: 2px solid #424c55;
 }
 main section.tasks {
   width: 100%;
@@ -83,4 +90,37 @@ main section.tasks div.task_card button.task_card_button {
 }
 main section.tasks div.task_card button.task_card_button:hover{
   background-color: rgb(10, 173, 119);
+}
+@media only screen and (max-width:1500px){
+  main section.tasks{
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+@media only screen and (max-width:1100px){
+  main section.tasks{
+    grid-template-columns: repeat(3,1fr);
+  }
+  main .input_section {
+    width: 70%;
+  }
+}
+@media only screen and (max-width:800px){
+  main section.tasks{
+    grid-template-columns: repeat(2,1fr);
+  }
+  main .input_section {
+    width: 70%;
+  }
+}
+@media only screen and (max-width:500px){
+  main section.tasks{
+    grid-template-columns: repeat(1,1fr);
+  }
+  main header h1{
+    font-size: 40px;
+  }
+  main .input_section {
+    width: 100%;
+  }
+
 }
