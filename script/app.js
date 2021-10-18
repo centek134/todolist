@@ -5,6 +5,11 @@ const addButton = document.getElementById("add-button");
 const tasksSection = document.getElementById("tasks");
 const tasks = [];
 const getInputValues = () => {
+    if ((!title.value || !description.value) || (title.value === " " || description.value === " ")) {
+        window.alert("Fill up the data!");
+        return;
+    }
+    ;
     pushTask(title.value, description.value);
 };
 const pushTask = (title, desc) => {
