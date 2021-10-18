@@ -6,6 +6,10 @@ const tasks: {title: string, description: string, id:number}[] = [];
 
 
 const getInputValues = () => {
+    if((!title.value || !description.value) ||(title.value === " " || description.value === " ")){
+        window.alert("Fill up the data!");
+        return;
+    };
     pushTask(title.value,description.value);
 };
 const pushTask = (title:string ,desc:string) => {
@@ -44,8 +48,5 @@ const createButton = (id:number,child: HTMLDivElement) => {
     });
     return buttonElement;
 };
-
-
-
 addButton.addEventListener("click", getInputValues);
 
